@@ -16,27 +16,7 @@ __pycache__/
 # External Real-ESRGAN repository
 Real-ESRGAN/
 
-# Datasets (keep folder structure)
-data/*
-!data/.gitkeep
-!data/original/
-!data/degraded/
-data/original/*
-data/degraded/*
-!data/original/.gitkeep
-!data/degraded/.gitkeep
-!data/degraded/blur/
-!data/degraded/noise/
-!data/degraded/low_resolution/
-!data/degraded/contrast/
-data/degraded/blur/*
-data/degraded/noise/*
-data/degraded/low_resolution/*
-data/degraded/contrast/*
-!data/degraded/blur/.gitkeep
-!data/degraded/noise/.gitkeep
-!data/degraded/low_resolution/.gitkeep
-!data/degraded/contrast/.gitkeep
+# Datasets
 
 # Generated outputs
 outputs/*
