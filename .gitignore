@@ -1,0 +1,66 @@
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# External Real-ESRGAN repository
+Real-ESRGAN/
+
+# Datasets (keep folder structure)
+data/*
+!data/.gitkeep
+!data/original/
+!data/degraded/
+data/original/*
+data/degraded/*
+!data/original/.gitkeep
+!data/degraded/.gitkeep
+!data/degraded/blur/
+!data/degraded/noise/
+!data/degraded/low_resolution/
+!data/degraded/contrast/
+data/degraded/blur/*
+data/degraded/noise/*
+data/degraded/low_resolution/*
+data/degraded/contrast/*
+!data/degraded/blur/.gitkeep
+!data/degraded/noise/.gitkeep
+!data/degraded/low_resolution/.gitkeep
+!data/degraded/contrast/.gitkeep
+
+# Generated outputs
+outputs/*
+!outputs/opencv_baseline/
+!outputs/restored/
+outputs/opencv_baseline/*
+outputs/restored/*
+!outputs/opencv_baseline/.gitkeep
+!outputs/restored/.gitkeep
+
+# Generated reports
+reports/*.csv
+reports/*.png
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.streamlit/secrets.toml
