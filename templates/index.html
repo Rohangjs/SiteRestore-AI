@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Restore degraded telecom infrastructure images with computer vision and AI-powered image enhancement.">
+
+    <title>SiteRestore AI — Image Restoration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SiteRestore<span class="logo-ai">AI</span></span>
+        </a>
+
+        <nav>
+            <a href="#features">Capabilities</a>
+            <a href="#restoration">Restoration</a>
+            <a href="#workflow">How it works</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle"
+                    class="theme-toggle"
+                    aria-label="Switch theme"
+                    title="Switch theme">
+                <span id="themeIcon">☼</span>
+            </button>
+
+            <a href="#restoration" class="nav-cta">
+                Get started <span>↗</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero container">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    AI-POWERED IMAGE RESTORATION
+                </div>
+
+                <h1>
+                    Bring degraded<br>
+                    images back to <span>life.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Restore telecom infrastructure images with
+                    computer vision and AI-based enhancement.
+                    Recover clarity, improve quality and inspect
+                    your images with confidence.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#restoration" class="primary-button">
+                        Restore an image <span>↗</span>
+                    </a>
+
+                    <a href="#workflow" class="secondary-button">
+                        Explore how it works <span>↓</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span>01</span>
+                    Computer Vision
+                    <span class="note-divider">·</span>
+                    AI Enhancement
+                    <span class="note-divider">·</span>
+                    Image Analysis
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="visual-topbar">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>IMAGE RESTORATION</span>
+
+                        <span class="visual-live">
+                            <span></span> READY
+                        </span>
+                    </div>
+
+                    <div class="visual-content">
+
+                        <div class="visual-label">
+                            RESTORATION WORKFLOW
+                        </div>
+
+                        <div class="workflow-item">
+                            <div class="workflow-icon">01</div>
+                            <div>
+                                <strong>Upload image</strong>
+                                <p>Select a degraded image</p>
+                            </div>
+                            <span class="workflow-check">✓</span>
+                        </div>
+
+                        <div class="workflow-line"></div>
+
+                        <div class="workflow-item">
+                            <div class="workflow-icon">02</div>
+                            <div>
+                                <strong>Enhance image</strong>
+                                <p>OpenCV or Real-ESRGAN</p>
+                            </div>
+                            <span class="workflow-check">✓</span>
+                        </div>
+
+                        <div class="workflow-line"></div>
+
+                        <div class="workflow-item">
+                            <div class="workflow-icon">03</div>
+                            <div>
+                                <strong>Review results</strong>
+                                <p>Compare the restored output</p>
+                            </div>
+                            <span class="workflow-arrow">↗</span>
+                        </div>
+
+                    </div>
+
+                    <div class="visual-footer">
+                        <span>SiteRestore AI</span>
+                        <span>IMAGE INTELLIGENCE SYSTEM</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-label">
+                    <span class="floating-dot"></span>
+                    Two restoration methods
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAPABILITY STRIP -->
+
+        <section class="capability-strip">
+
+            <div class="container strip-content">
+
+                <span>BUILT FOR IMAGE RECOVERY</span>
+
+                <div>Blur</div>
+                <div>Noise</div>
+                <div>Low Resolution</div>
+                <div>Poor Contrast</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="features-section container" id="features">
+
+            <div class="section-intro">
+
+                <span class="section-kicker">01 / CAPABILITIES</span>
+
+                <h2>
+                    Different degradation.<br>
+                    <span>One restoration workspace.</span>
+                </h2>
+
+                <p>
+                    Target common image-quality problems using
+                    dedicated enhancement techniques.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <article class="feature-item">
+                    <span class="feature-number">01</span>
+                    <div class="feature-symbol">◌</div>
+                    <h3>Blur Reduction</h3>
+                    <p>
+                        Improve image sharpness using
+                        OpenCV-based enhancement.
+                    </p>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-number">02</span>
+                    <div class="feature-symbol">⌁</div>
+                    <h3>Noise Removal</h3>
+                    <p>
+                        Reduce unwanted visual noise
+                        while retaining image details.
+                    </p>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-number">03</span>
+                    <div class="feature-symbol">↗</div>
+                    <h3>Resolution Enhancement</h3>
+                    <p>
+                        Upscale images using AI-based
+                        super-resolution.
+                    </p>
+                </article>
+
+                <article class="feature-item">
+                    <span class="feature-number">04</span>
+                    <div class="feature-symbol">◐</div>
+                    <h3>Contrast Improvement</h3>
+                    <p>
+                        Improve visibility using
+                        adaptive contrast enhancement.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESTORATION WORKSPACE -->
+
+        <section class="restoration-section" id="restoration">
+
+            <div class="container">
+
+                <div class="restoration-heading">
+
+                    <div>
+                        <span class="section-kicker">
+                            02 / RESTORATION STUDIO
+                        </span>
+
+                        <h2>Let's restore your image.</h2>
+
+                        <p>
+                            Upload an image and select the
+                            enhancement method.
+                        </p>
+                    </div>
+
+                    <div class="studio-status">
+                        <span></span> SYSTEM READY
+                    </div>
+
+                </div>
+
+
+                <div class="workspace">
+
+                    <!-- UPLOAD PANEL -->
+
+                    <div class="upload-panel">
+
+                        <h3>01. Image input</h3>
+
+                        <label for="imageInput" class="upload-area">
+
+                            <div class="upload-icon">↑</div>
+
+                            <h4>Drop your image here</h4>
+
+                            <p>
+                                Or browse files from your computer
+                            </p>
+
+                            <span>Browse images</span>
+
+                        </label>
+
+                        <input type="file"
+                               id="imageInput"
+                               accept="image/*"
+                               hidden>
+
+                        <div id="fileName">
+                            No image selected
+                        </div>
+
+
+                        <label for="category">
+                            Degradation category
+                        </label>
+
+                        <select id="category">
+                            <option value="blur">Blur</option>
+                            <option value="noise">Noise</option>
+                            <option value="low_resolution">
+                                Low Resolution
+                            </option>
+                            <option value="contrast">
+                                Poor Contrast
+                            </option>
+                        </select>
+
+
+                        <label for="method">
+                            Restoration method
+                        </label>
+
+                        <select id="method">
+                            <option value="opencv">
+                                OpenCV Enhancement
+                            </option>
+
+                            <option value="realesrgan">
+                                Real-ESRGAN AI
+                            </option>
+                        </select>
+
+
+                        <button id="restoreButton">
+                            Start restoration <span>↗</span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- IMAGE PREVIEW -->
+
+                    <div class="preview-panel">
+
+                        <div class="panel-heading">
+                            <h3>02. Image preview</h3>
+                            <span>INPUT</span>
+                        </div>
+
+                        <div class="preview-area" id="previewArea">
+                            <div>
+                                <span class="empty-icon">▧</span>
+                                <p>Your selected image will appear here</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RESULTS -->
+
+                <div class="results-section">
+
+                    <div class="section-heading">
+                        <h3>03. Restoration results</h3>
+                        <p>Compare the original and enhanced images</p>
+                    </div>
+
+                    <div class="results-grid">
+
+                        <div class="result-card">
+
+                            <div class="result-card-heading">
+                                <h4>Original image</h4>
+                                <span>INPUT</span>
+                            </div>
+
+                            <div class="result-placeholder"
+                                 id="originalResult">
+                                Awaiting image
+                            </div>
+
+                        </div>
+
+
+                        <div class="result-card">
+
+                            <div class="result-card-heading">
+                                <h4>Restored image</h4>
+                                <span>OUTPUT</span>
+                            </div>
+
+                            <div class="result-placeholder"
+                                 id="restoredResult">
+                                Awaiting restoration
+                            </div>
+
+                            <p id="processingTime"
+                               class="processing-time"></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section class="workflow-section container" id="workflow">
+
+            <div class="section-intro">
+
+                <span class="section-kicker">03 / WORKFLOW</span>
+
+                <h2>
+                    Three steps.<br>
+                    <span>Clearer images.</span>
+                </h2>
+
+                <p>
+                    A straightforward process from image upload
+                    to enhanced output.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step-item">
+                    <span>01</span>
+                    <h3>Upload</h3>
+                    <p>
+                        Choose a degraded telecom
+                        infrastructure image.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <span>02</span>
+                    <h3>Restore</h3>
+                    <p>
+                        Select an enhancement method
+                        and process the image.
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <span>03</span>
+                    <h3>Evaluate</h3>
+                    <p>
+                        Review the restored image
+                        and compare the output.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section class="final-cta container">
+
+            <div>
+                <span class="section-kicker">SITERESTORE AI</span>
+
+                <h2>
+                    Ready to bring your<br>
+                    images back to life?
+                </h2>
+            </div>
+
+            <a href="#restoration" class="primary-button">
+                Start restoring <span>↗</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer container" id="about">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SiteRestore<span class="logo-ai">AI</span></span>
+        </a>
+
+        <p>
+            Computer Vision & AI-Based Image Enhancement
+        </p>
+
+        <span>© 2026 SiteRestore AI</span>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
